@@ -1,0 +1,4 @@
+services:
+#    uesna_base.example:
+#        class: UESNA\BaseBundle\Example
+#        arguments: [@service_id, "plain_value", %parameter%]

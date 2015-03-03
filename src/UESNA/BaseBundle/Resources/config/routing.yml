@@ -1,0 +1,3 @@
+uesna_base_homepage:
+    path:     /
+    defaults: { _controller: UESNABaseBundle:Default:index }

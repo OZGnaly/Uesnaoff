@@ -1,0 +1,26 @@
+{% extends "UESNAUserBundle::base.html.twig" %}
+{% block title %}Mot de passe oublier?{% endblock %}
+{% block body %}
+    <div class="col-sm-8 col-lg-offset-2" >
+    <h1>Aïe vous avez perdu votre Mot de passe?<br/><br/></h1>
+
+    <h3>C'est pas grave, vous pouvez le recuperer en deux munutes(promis)<br />
+    Veuillez ecrire votre adresse email et vous recevrez immediatement un lien pour que vous puissiez le changer!!
+    </h3>
+    </div>
+    <form action="{{ path('fos_user_resetting_send_email') }}" method="POST" class="fos_user_resetting_request col-sm-5 col-lg-offset-3">
+        <div>
+            {% if invalid_username is defined %}
+                <p>Email ou Pseudo Invalide, Réesseyer s'il vous plait!</p>
+            {% endif %}
+            <div class="control-group">
+            <label for="username">Pseudo ou Email</label>
+            <input type="text" id="username" name="username" required="required" />
+                </div>
+        </div>
+        <div>
+            <button href="{{ 'resetting.request.submit'|trans }}" class="btn btn-primary" >Envoyer</button>
+        </div>
+    </form>
+
+{% endblock%}
