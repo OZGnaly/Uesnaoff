@@ -59,7 +59,7 @@ class Ancien
     /**
      * @var string
      *
-     * @ORM\Column(name="anneeDebut", type="string", length=255)
+     * @ORM\Column(name="anneeDebut", type="string", length=255 )
      */
     private $anneeDebut;
 
