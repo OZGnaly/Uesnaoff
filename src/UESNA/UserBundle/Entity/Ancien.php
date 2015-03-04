@@ -45,7 +45,7 @@ class Ancien
     /**
      * @var string
      *
-     * @ORM\Column(name="Nom", type="string", length=100 )
+     * @ORM\Column(name="Nom",  type="string", length=100 )
      */
     private $nom;
 
