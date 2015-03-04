@@ -43,9 +43,9 @@ class Ancien
     private $decritTois;
 
     /**
-     * @var string
+     * @var text
      *
-     * @ORM\Column(name="Nom", type="string", length=255)
+     * @ORM\Column(name="Nom", type="text", )
      */
     private $nom;
 
