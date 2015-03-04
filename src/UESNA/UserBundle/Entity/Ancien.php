@@ -36,23 +36,23 @@ class Ancien
     private $statusActuelle;
 
     /**
-     * @var string
+     * @var text
      *
-     * @ORM\Column(name="decritTois", type="string", length=255)
+     * @ORM\Column(name="decritTois", type="text" )
      */
     private $decritTois;
 
     /**
-     * @var text
+     * @var string
      *
-     * @ORM\Column(name="Nom", type="text", )
+     * @ORM\Column(name="Nom", type="string", length=100 )
      */
     private $nom;
 
     /**
      * @var string
      *
-     * @ORM\Column(name="Prenom", type="string", length=255)
+     * @ORM\Column(name="Prenom", type="string", length=100 )
      */
     private $prenom;
 
